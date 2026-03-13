@@ -737,7 +737,7 @@ body {
   line-height: 1.7;
 }
 
-.navbar-dark .nav-link.active {
+.my-navbar .nav-link.active {
   color: #2196f3 !important;
   /* brand blue */
   font-weight: 600;

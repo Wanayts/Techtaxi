@@ -1,21 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const industriesLink = document.querySelector(".dropdown-hover > a");
+  const dropdown = document.querySelector(".dropdown-hover");
+  const menu = dropdown.querySelector(".hover-menu");
 
-  if (!industriesLink) return;
+  dropdown.addEventListener("click", function(e){
 
-  industriesLink.addEventListener("click", function (e) {
-
-    if (window.innerWidth < 991) { // mobile only
+    if (window.innerWidth < 991) {
       e.preventDefault();
-      e.stopPropagation(); // prevent Bootstrap collapse conflict
+      e.stopPropagation();
 
-      const menu = this.parentElement.querySelector(".hover-menu");
-
-      if (menu) {
-        menu.classList.toggle("show-menu");
-      }
-
+      menu.classList.toggle("show-menu");
     }
 
   });

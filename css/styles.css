@@ -1102,6 +1102,12 @@ body {
   margin-top: 5px;
 }
 
+@media (min-width: 992px){
+  .dropdown-hover:hover .hover-menu {
+    display: block;
+  }
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 32px;

@@ -1177,20 +1177,36 @@ body {
     padding: 0.3em 0.55em;
   }
 
+  .dropdown-hover {
+    position: relative; /* parent needed for absolute dropdown */
+  }
+
   .dropdown-hover .hover-menu {
-    display: none; /* hide by default on mobile */
-    position: static; /* stack naturally */
+    display: none; /* hidden by default */
+    position: absolute; /* floating above content */
+    top: 100%; /* below the parent link */
+    left: 0;
     background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 200px; /* or any width you want */
+    z-index: 1000;
   }
 
   .dropdown-hover .hover-menu.show-menu {
-    display: block !important; /* show when JS toggles */
+    display: block !important;
   }
 
+  /* Optional: style dropdown links */
   .dropdown-hover .hover-menu a {
     display: block;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee; /* optional styling */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .dropdown-hover .hover-menu a:hover {
+    background: #f0f0f0;
   }
 }
 

@@ -1200,31 +1200,19 @@ body {
   }
 
   .dropdown-hover .hover-menu {
-    display: none;       /* hidden by default */
-    position: absolute;  /* floating over content */
-    top: 100%;
+    display: none;        /* hidden by default */
+    position: absolute;   /* float above content */
+    top: 100%;            /* below parent link */
     left: 0;
-    width: 200px;        /* adjust as needed */
+    width: 200px;         /* adjust as needed */
     background: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1000;
+    pointer-events: auto;
   }
 
   .dropdown-hover .hover-menu.show-menu {
-    display: block !important;
-  }
-
-  /* Optional styling for links */
-  .dropdown-hover .hover-menu a {
-    display: block;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    text-decoration: none;
-    color: #000;
-  }
-
-  .dropdown-hover .hover-menu a:hover {
-    background: #f0f0f0;
+    display: block !important;  /* ensures JS toggle works */
   }
 
   /* Make sure navbar allows dropdown to overflow */

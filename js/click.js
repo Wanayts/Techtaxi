@@ -2,30 +2,29 @@ const dropdowns = document.querySelectorAll('.dropdown-hover > a');
 
 dropdowns.forEach(link => {
   link.addEventListener('click', function(e) {
-    if (window.innerWidth < 768) {
-      e.preventDefault(); 
+    if (window.innerWidth < 991) {
+      e.preventDefault();
       const menu = this.nextElementSibling;
 
+      // Close other open menus
+      document.querySelectorAll('.dropdown-hover .hover-menu').forEach(m => {
+        if (m !== menu) m.classList.remove('show-menu');
+      });
+
       // Toggle this menu
-      if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-      } else {
-        // First close any other open menu
-        document.querySelectorAll('.dropdown-hover .hover-menu').forEach(m => m.style.display = 'none');
-        menu.style.display = 'block';
-      }
+      menu.classList.toggle('show-menu');
     }
   });
 });
 
-// Close menu when clicking outside
+// Close when clicking outside
 document.addEventListener('click', function(e) {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 991) {
     dropdowns.forEach(link => {
       const dropdown = link.parentElement;
       const menu = link.nextElementSibling;
       if (!dropdown.contains(e.target)) {
-        menu.style.display = 'none';
+        menu.classList.remove('show-menu');
       }
     });
   }

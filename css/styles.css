@@ -1177,11 +1177,12 @@ body {
     padding: 0.3em 0.55em;
   }
   .dropdown-hover .hover-menu {
-    display: none;
+    display: none; /* hidden on mobile */
+    position: static; /* stack naturally */
   }
-  
+
   .dropdown-hover .hover-menu.show-menu {
-    display: block !important;
+    display: block !important; /* JS toggle */
   }
 }
 

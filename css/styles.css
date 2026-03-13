@@ -740,7 +740,7 @@ body {
 .my-navbar .nav-link.active {
   color: #2196f3 !important;
   /* brand blue */
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about-block p {

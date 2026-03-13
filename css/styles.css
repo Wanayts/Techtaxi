@@ -1176,6 +1176,22 @@ body {
     font-size: 12px;
     padding: 0.3em 0.55em;
   }
+
+  .dropdown-hover .hover-menu {
+    display: none; /* hide by default on mobile */
+    position: static; /* stack naturally */
+    background: #fff;
+  }
+
+  .dropdown-hover .hover-menu.show-menu {
+    display: block !important; /* show when JS toggles */
+  }
+
+  .dropdown-hover .hover-menu a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* optional styling */
+  }
 }
 
 @media (max-width: 800px) {

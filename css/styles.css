@@ -1128,6 +1128,7 @@ body {
   }
 
   .navbar-collapse {
+    overflow: visible !important;
     position: fixed;
     top: 112px;
     left: 0;

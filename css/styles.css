@@ -70,6 +70,10 @@ body {
   z-index: -1;
 }
 
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); 
+}
+
 .nav-link {
   white-space: normal;
   word-break: break-word;

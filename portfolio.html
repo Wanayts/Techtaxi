@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/logologo.png" type="image/png" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <title>Techtaxi Inc. | Portfolio</title>
+</head>
+
+<body>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Top Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <strong class="text-primary">Custom Software. Built Right.</strong>
+    </div>
+  </div>
+
+  <!-- Hero Background -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: relative; z-index: 1000">
+    <div class="container-fluid px-2">
+      <a class="navbar-brand mx-3" href="index.html">
+        <!-- small margin -->
+        <img src="assets/images/logo-text.png" alt="TECHTAXI Logo" class="img-fluid" style="height: 40px" />
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-2">
+          <!-- smaller gap -->
+          <li class="nav-item">
+            <a class="nav-link py-1" href="solutions.html">Solutions & Technologies</a>
+          </li>
+          <li class="nav-item dropdown-hover">
+            <a class="nav-link py-1" href="#">Industries</a>
+
+            <!-- Floating panel -->
+            <div class="hover-menu">
+              <a href="industries/trading-platforms.html">FinTech & Trading</a>
+              <a href="industries/booking-platforms.html">Hospitality & Travel</a>
+              <a href="industries/health-wellness.html">Health & Wellness</a>
+              <a href="industries/maritime-security.html">Maritime & Security</a>
+              <a href="industries/education.html">Education</a>
+              <a href="industries/retail-system.html">E-commerce & Retail</a>
+              <a href="industries/logistics-inventory.html">Logistics & Supply Chain</a>
+              <a href="industries/real-estate.html">Real Estate & Architecture</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-1 active" href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link py-1" href="blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link py-1" href="about.html">About Us</a>
+          </li>
+        </ul>
+        <div class="ms-auto">
+          <a class="btn btn-outline-light px-3 py-1 rounded-0 mx-1" href="#contact-section">Let’s Talk&nbsp; <i
+              class="fa-solid fa-phone-flip"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="section-blog py-4">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mb-3 mt-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Portfolio
+          </li>
+        </ol>
+      </nav>
+      <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+        <h2 class="h2-title mb-5">
+          <span class="text-decoration-underline">Po</span>rtfolio
+        </h2>
+      </div>
+      <!-- Filter buttons -->
+      <div class="case-buttons d-flex flex-wrap gap-3 gap-sm-4 ms-3 mt-3 mt-sm-4">
+        <button type="button" class="btn btn-warning btn-sm active" data-filter="all">
+          All
+        </button>
+        <button type="button" class="btn btn-clear-secondary btn-sm" data-filter="web-application">
+          Web Applications
+        </button>
+        <button type="button" class="btn btn-clear-secondary btn-sm" data-filter="mobile-apps">
+          Mobile Apps
+        </button>
+        <button type="button" class="btn btn-clear-secondary btn-sm" data-filter="enterprises-system">
+          Enterprise Systems
+        </button>
+        <button type="button" class="btn btn-clear-secondary btn-sm" data-filter="commerce">
+          E-commerce
+        </button>
+        <button type="button" class="btn btn-clear-secondary btn-sm" data-filter="automation-iot">
+          Automation & IoT
+        </button>
+      </div>
+
+      <section class="section-case py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-6 col-md-4 case-item" data-category="web-application">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">WEB APPLICATION</span>
+                  <img src="assets/images/stock.jpg"
+                    alt="Stock market trading charts displayed on a computer screen showing financial data trends"
+                    class="w-100 h-100" style="object-fit: cover; border-radius: 0" />
+                  <div class="blog-overlay">
+                    <p>
+                      A real-time online platform for trading precious metals, complete with dynamic pricing, client
+                      account management, and dealer-specific portals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h5 class="card-title mt-2 ms-2">
+                Hunterwise Commodities Trading System
+              </h5>
+            </div>
+
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/fitness.jpg" alt="Woman lifting dumbbells during a fitness workout session"
+                    class="w-100 h-100" style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>
+                      Science-backed wellness platforms delivering personalized fitness plans, nutritional guidance, and
+                      lifestyle recommendations based on user inputs and biometric data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">PH360 & Club360</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/automation.jpg"
+                    alt="Close-up of electronic circuit board representing automation and embedded systems"
+                    class="w-100 h-100" style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>
+                      We engineered Arduino-powered automation systems that synchronize lighting and mechanical motion
+                      with voice-over presentations delivered via tablet devices. These interactive models were used in
+                      real estate developments.We engineered Arduino-powered automation systems that synchronize
+                      lighting
+                      and mechanical motion with voice-over presentations delivered via tablet devices. These
+                      interactive
+                      models were used in real estate developments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">
+                Scale Model Automation
+              </h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/warehouse.jpg"
+                    alt="Warehouse worker holding a tablet inside a storage facility with shelves" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>
+                      Developed for clients including TRANSCOM, JPM, POWERFILL, and AXSYS, these systems were built to
+                      replace bloated ERP platforms with lean, workflow-specific software.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">
+                Custom Inventory & Warehouse System
+              </h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/screen-egetinnz.png"
+                    alt="Online home booking interface displayed on a laptop screen" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>A full-featured online booking platform engineered with scalable backend architecture and
+                      responsive frontend design to support growing accommodation networks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">eGetinnz</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/screen-BAR.png"
+                    alt="Real estate rental website homepage displayed on a desktop screen" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>A hospitality marketplace platform featuring property listings, booking workflows, and secure
+                      payment integration, built to support long-term rentals and alternative stays.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">Bedsandrooms.ph</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="web-application">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">WEB APPLICATION</span>
+
+                  <img src="assets/images/screen-hudson.png"
+                    alt="Corporate maritime services website homepage displayed on a desktop screen" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>Ship management and compliance tools</p>
+                    <p><strong>AVRA -</strong>A voyage risk assessment platform that enables structured threat
+                      evaluation and strategic route planning.</p>
+                    <p><strong>TMSALogix -</strong>An audit and compliance reporting system built to support ship
+                      inspections and safety management standards.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">Hudson Analytix</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="commerce">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">E-COMMERCE</span>
+
+                  <img src="assets/images/screen-ams.png"
+                    alt="E-commerce dashboard interface showing analytics and performance metrics" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>An automation tool built for Amazon sellers to manage reviews, feedback, and product visibility,
+                      helping them maintain visibility, protect brand reputation, and streamline engagement workflows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">AMSMailer</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="web-application">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">WEB APPLICATION</span>
+
+                  <img src="assets/images/screen-ccexch.png"
+                    alt="Cryptocurrency exchange website homepage with digital coin background" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>A secure digital trading infrastructure with wallet integration, transaction monitoring, and
+                      admin controls.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">CCEXCH</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/screen-csmart.png"
+                    alt="School management system dashboard interface with feature highlights" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>A proprietary academic management platform designed to automate school operations and reporting
+                      requirements while reducing manual processes and ensuring compliance and data accuracy across
+                      departments.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">CSMART</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/screen-exo.png" alt="Enterprise warehouse management system website interface"
+                    class="w-100 h-100" style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>A stock monitoring and inventory flow platform supporting purchasing, tracking, picking, and
+                      fulfillment operations without unnecessary complexity.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">EXO Warehouse System</h5>
+            </div>
+
+            <div class="col-6 col-md-4 case-item" data-category="enterprises-system">
+              <div class="position-relative overflow-hidden rounded-0" style="padding-top: 100%">
+                <div class="card blog-card position-absolute top-0 start-0 w-100 h-100">
+                  <span class="badge bg-primary position-absolute m-3">ENTERPRISES</span>
+
+                  <img src="assets/images/midmarks.png"
+                    alt="Medical device digital control interface with screen display" class="w-100 h-100"
+                    style="object-fit: cover; border-radius: 0" />
+
+                  <div class="blog-overlay">
+                    <p>We developed a centralized interface that connects multiple diagnostic medical devices to a
+                      physician’s workstation,
+                      aggregating and displaying test results for efficient review and analysis while showcasing our
+                      expertise in embedded
+                      system integration and secure device communication.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-2 ms-2">Midmark Device Interface</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section style="background: #0d6efd;padding:3rem 0">
+    <div class="container">
+
+
+      <style>
+        .my-flex-client {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 3rem 0 !important
+        }
+
+        .my-flex-client>img {
+          height: 65px;
+          color: white;
+          padding: 10px;
+        }
+
+        .my-flex-client>img.logo-circle {
+          height: 100px;
+        }
+      </style>
+ <div class="text-center mb-5">
+        <h1 class="fw-bold">
+          OUR HAPPY
+          <span class="text-primary" style="color: #fdfdfd !important;">CLIENTS</span>
+        </h1>
+      </div>
+      <div class="my-flex-client">
+        <img src="assets/images/white-client-logo/logo-ams.png" alt="">
+      
+        <img src="assets/images/white-client-logo/logo-bar.png" alt="">
+        <img src="assets/images/white-client-logo/logo-bosspad.png" alt="">
+        <img src="assets/images/white-client-logo/logo-egetinnz.png" alt="">
+        <img src="assets/images/white-client-logo/logo-hw.png" alt="">
+       
+        <img src="assets/images/white-client-logo/logo-mem.png" alt="">
+        <img src="assets/images/white-client-logo/logo-mid-mark.png" alt="">
+       
+        <img src="assets/images/white-client-logo/logo-ph360.png" alt="">
+        <img src="assets/images/white-client-logo/logo-spurway.png" alt="">
+        <img src="assets/images/white-client-logo/logo-ssg.png" alt="">
+        <img src="assets/images/white-client-logo/logo-vrp.png" alt="">
+          <img src="assets/images/white-client-logo/logo-avra.png" alt=""  class="logo-circle">
+        <img src="assets/images/white-client-logo/logo-axsys.png" alt=""  class="logo-circle">
+         <img src="assets/images/white-client-logo/logo-jpm.png" alt="" class="logo-circle">
+         <img src="assets/images/white-client-logo/logo-mm4.png" alt="" class="logo-circle">
+        <img src="assets/images/white-client-logo/logo-pcs.png" alt="" class="logo-circle">
+
+      </div>
+    </div>
+  </section>
+  <section id="contact-section" class="contact-section py-5">
+    <div class="container">
+      <!-- Top Heading -->
+      <div class="text-center mb-5">
+        <h1 class="fw-bold">
+          LET’S TALK
+          <span class="text-primary">ABOUT YOUR NEXT BIG MOVE</span>
+        </h1>
+      </div>
+
+      <div class="row align-items-start">
+        <!-- LEFT SIDE -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <p class="mb-4">
+            We’re here to listen, whether you have a solid plan or just a
+            rough idea. Our team is ready to help you explore what’s possible
+            and turn your vision into a working solution.
+          </p>
+
+          <p class="mb-4">
+            No pressure. No jargon. Just a real conversation about how
+            technology can support your goals.
+          </p>
+
+          <p class="mb-5">
+            Send us your ideas, questions, or challenges. We’ll take it from
+            there.
+          </p>
+
+          <!-- Office -->
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle me-3">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-primary">Our Office</h6>
+              <p class="mb-0">
+                Unit 3006 One Corporate Centre Bldg,<br />
+                Julia Vargas Ave, Ortigas Center,<br />
+                San Antonio Pasig City, Philippines 1605
+              </p>
+            </div>
+          </div>
+
+          <!-- Call -->
+          <div class="d-flex align-items-start mb-4">
+            <div class="icon-circle me-3">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-primary">Call Us</h6>
+              <p class="mb-0">
+                Vincent Calaor<br />
+                Mobile: (+63) 917 103 0459
+              </p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="d-flex align-items-start">
+            <div class="icon-circle me-3">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-primary">E-mail Us</h6>
+              <p class="mb-0">
+                Email:
+                <a href="mailto:info@techtaxiinc.com">info@techtaxiinc.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="col-lg-6" style="color: #213e6e">
+          <h2 class="fw-bold mb-4 text-lg-mid text-center">Get in Touch</h2>
+
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">
+                  First name <span class="required"> *</span>
+                </label>
+                <input type="text" class="form-control" placeholder="First Name" required />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Last name<span class="required"> *</span></label>
+                <input type="text" class="form-control" placeholder="Last Name" required />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Email<span class="required"> *</span></label>
+                <input type="email" class="form-control" placeholder="your@company.com" required />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Phone number</label>
+                <input type="tel" class="form-control" placeholder="+1(555) 000-0000" />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Your message<span class="required"> *</span></label>
+                <textarea class="form-control" rows="5" placeholder="Leave us a message..." required></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark w-100 py-2">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-primary text-white py-4">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-evenly align-items-center text-center gap-3">
+        <!-- Logo -->
+        <div>
+          <a href="index.html" class="d-flex align-items-center text-white text-decoration-none justify-content-center">
+            <img src="assets/images/logo-text.png" alt="Techtaxi Logo" class="me-2" style="height: 20px" />
+          </a>
+        </div>
+
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="https://www.linkedin.com/company/techtaxiinc/" target="_blank" class="text-white"><i
+              class="bi bi-linkedin fs-5"></i></a>
+          <a href="https://www.facebook.com/techtaxiinc" target="_blank" class="text-white"><i
+              class="bi bi-facebook fs-5"></i></a>
+          <a href="https://x.com/techtaxiinc" target="_blank" class="text-white"><i
+              class="bi bi-twitter-x fs-5"></i></a>
+          <a href="https://www.instagram.com/techtaxiinc/" target="_blank" class="text-white"><i
+              class="bi bi-instagram fs-5"></i></a>
+          <a href="https://www.youtube.com/@techtaxiinc" target="_blank" class="text-white"><i
+              class="bi bi-youtube fs-5"></i></a>
+          <a href="https://www.tiktok.com/@techtaxiinc" target="_blank" class="text-white"><i
+              class="bi bi-tiktok fs-5"></i></a>
+        </div>
+
+        <!-- Credits -->
+        <div>
+          <small class="text-white">© 2026 Techtaxi Inc. All Rights Reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+</body>
+<script src="js/backToTop.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/navbar.js"></script>
+
+</html>

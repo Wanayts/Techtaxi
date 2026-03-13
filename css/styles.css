@@ -876,6 +876,7 @@ body {
   background-size: cover;
   min-height: 80vh;
   display: flex;
+  height: 100%
   flex-direction: column;
 }
 

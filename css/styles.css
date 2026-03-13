@@ -1222,6 +1222,9 @@ body {
     font-size: 12px;
     color: #6c757d;
   }
+  .dropdown-hover .hover-menu {
+    display: none; /* Hidden by default on mobile */
+    position: static; /* Stack naturally */
 }
 
 @media (max-width: 576px) {
@@ -1288,6 +1291,10 @@ body {
     font-size: 10px;
     padding: 0.25em 0.45em;
   }
+
+  .dropdown-hover .hover-menu {
+    display: none; /* Hidden by default on mobile */
+    position: static; /* Stack naturally */
 }
 
 @media (max-width: 767px) {
@@ -1320,4 +1327,8 @@ body {
     font-size: 10px;
     padding: 4px 6px;
   }
+
+  .dropdown-hover .hover-menu {
+    display: none; /* Hidden by default on mobile */
+    position: static; /* Stack naturally */
 }

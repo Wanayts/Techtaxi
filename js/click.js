@@ -1,33 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Select the navbar collapse
-  const navbarCollapse = document.getElementById("mainNav");
-
-  // Select the dropdown
   const dropdown = document.querySelector(".dropdown-hover");
   const link = dropdown.querySelector("a");
   const menu = dropdown.querySelector(".hover-menu");
+  const navbarCollapse = document.getElementById("mainNav");
 
-  // Only for mobile
-  link.addEventListener("click", function(e) {
-    if (window.innerWidth < 992) {
-      e.preventDefault();
-      e.stopPropagation();
+  function mobileDropdownHandler(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-      // Make sure the navbar collapse is open
-      if (!navbarCollapse.classList.contains("show")) {
-        // Open navbar first
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: true});
-        // Wait for animation to finish, then toggle menu
-        navbarCollapse.addEventListener("shown.bs.collapse", function handler() {
-          menu.classList.toggle("show-menu");
-          navbarCollapse.removeEventListener("shown.bs.collapse", handler);
-        });
-      } else {
+    if (!navbarCollapse.classList.contains("show")) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: true});
+      navbarCollapse.addEventListener("shown.bs.collapse", function handler() {
         menu.classList.toggle("show-menu");
-      }
+        navbarCollapse.removeEventListener("shown.bs.collapse", handler);
+      });
+    } else {
+      menu.classList.toggle("show-menu");
     }
-  });
+  }
+
+  // Only attach click handler if screen is mobile
+  function attachDropdown() {
+    if (window.innerWidth < 992) {
+      link.addEventListener("click", mobileDropdownHandler);
+    } else {
+      link.removeEventListener("click", mobileDropdownHandler);
+      menu.classList.remove("show-menu"); // reset desktop
+    }
+  }
+
+  attachDropdown();
+
+  // Re-check on window resize
+  window.addEventListener("resize", attachDropdown);
 
   // Close dropdown when clicking outside
   document.addEventListener("click", function(e){

@@ -11,3 +11,14 @@ industriesLink.addEventListener('click', function(e) {
   }
 
 });
+
+// close dropdown when clicking outside
+document.addEventListener('click', function(e){
+
+  if (!e.target.closest('.dropdown-hover')) {
+    document.querySelectorAll('.hover-menu').forEach(menu => {
+      menu.classList.remove('show-menu');
+    });
+  }
+
+});

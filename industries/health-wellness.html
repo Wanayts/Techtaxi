@@ -47,119 +47,74 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Top Bar -->
-    <div class="top-bar text-center">
-      <div class="container">
-        <strong class="text-primary">Custom Software. Built Right.</strong>
-      </div>
-    </div>
-
-    <!-- Hero Background -->
-    <div class="health-bg">
-      <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark"
-        style="position: relative; z-index: 1000"
-      >
-        <div class="container-fluid px-2">
-          <!-- smaller horizontal padding -->
-          <!-- Logo -->
-          <a class="navbar-brand mx-3" href="../index.html">
-            <!-- small margin -->
-            <img
-              src="../assets/images/logo-text.png"
-              alt="TECHTAXI Logo"
-              class="img-fluid"
-              style="height: 40px"
-            />
-          </a>
-
-          <!-- Mobile toggle -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav mx-auto gap-2">
-              <!-- smaller gap -->
-              <li class="nav-item">
-                <a class="nav-link py-1" href="../solutions.html"
-                  >Solutions & Technologies</a
-                >
-              </li>
-              <li class="nav-item dropdown-hover">
-                <a class="nav-link py-1 active" href="#">Industries</a>
-
-                <!-- Floating panel -->
-                <div class="hover-menu">
-                  <a href="../industries/trading-platforms.html"
-                    >FinTech & Trading</a
-                  >
-                  <a href="../industries/booking-platforms.html"
-                    >Hospitality & Travel</a
-                  >
-                  <a href="../industries/health-wellness.html" class="active"
-                    >Health & Wellness</a
-                  >
-                  <a href="../industries/maritime-security.html"
-                    >Maritime & Security</a
-                  >
-                  <a href="../industries/education.html">Education</a>
-                  <a href="../industries/retail-system.html"
-                    >E-commerce & Retail</a
-                  >
-                  <a href="../industries/logistics-inventory.html"
-                    >Logistics & Supply Chain</a
-                  >
-                  <a href="../industries/real-estate.html"
-                    >Real Estate & Architecture</a
-                  >
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link py-1" href="../portfolio.html">Portfolio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link py-1" href="../blog.html">Blog</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link py-1" href="../about.html">About Us</a>
-              </li>
-            </ul>
-            <div class="ms-auto">
-              <a
-                class="btn btn-outline-light px-3 py-1 rounded-0 mx-1"
-                href="#contact-section"
-                >Let’s Talk&nbsp; <i class="fa-solid fa-phone-flip"></i
-              ></a>
-            </div>
+    <div class="fixed-top">
+      
+        <!-- Top Bar -->
+        <div class="top-bar text-center">
+          <div class="container">
+            <strong class="text-primary">Custom Software. Built Right.</strong>
           </div>
         </div>
-      </nav>
+      
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark my-navbar">
+          <div class="container-fluid px-2">
+      
+            <!-- Logo -->
+            <a class="navbar-brand mx-3" href="../index.html">
+              <img src="../assets/images/logo-text.png" alt="Techtaxi Logo" class="img-fluid" style="height:40px">
+            </a>
+      
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav mx-auto gap-5">
+                <li class="nav-item"><a class="nav-link py-1" href="../solutions.html">Solutions & Technologies</a></li>
+                <li class="nav-item dropdown-hover">
+                  <a class="nav-link py-1" href="#">Industries</a>
+                  <div class="hover-menu">
+                    <a href="../industries/trading-platforms.html">FinTech & Trading</a>
+                    <a href="../industries/booking-platforms.html">Hospitality & Travel</a>
+                    <a href="../industries/health-wellness.html" class="active">Health & Wellness</a>
+                    <a href="../industries/maritime-security.html">Maritime & Security</a>
+                    <a href="../industries/education.html">Education</a>
+                    <a href="../industries/retail-system.html">E-commerce & Retail</a>
+                    <a href="../industries/logistics-inventory.html">Logistics & Supply Chain</a>
+                    <a href="../industries/real-estate.html">Real Estate & Architecture</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link py-1" href="../portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link py-1" href="../blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link py-1" href="../about.html">About Us</a></li>
+              </ul>
+      
+              <div class="ms-auto">
+                <a class="btn btn-outline-light px-3 py-1 rounded-0 mx-1" href="#contact-section">
+                  Let’s Talk <i class="fa-solid fa-phone-flip"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      
+      </div>
+      
       <!-- Hero Section -->
-      <section
-        class="hero d-flex align-items-center dark position-relative py-5"
-      >
-        <div class="container hero-content text-start">
-          <h1 class="fw-bold display-6 mb-3">
-            <span class="custom-underline">Hea</span>lth & Wellness Platforms
-          </h1>
-          <p class="text-light col-lg-7">
-            We design and develop custom digital platforms that improve healthcare operations, enhance user engagement, and deliver seamless wellness experiences.
-          </p>
-        </div>
+      <section class="hero d-flex align-items-center position-relative py-5 health-bg">
+          <!-- Hero Content -->
+          <div class="container hero-content text-start position-relative z-1">
+            <h1 class="fw-bold display-6 mb-3">
+              <span class="custom-underline">Hea</span>lth & Wellness Platforms
+            </h1>
+            <p class="text-light col-lg-7">
+              We design and develop custom digital platforms that improve healthcare operations, enhance user engagement, and deliver seamless wellness experiences.
+            </p>
+          </div>
       </section>
-    </div>
 
     <section class="py-5 bg-light">
       <div class="container">

@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   /* for-top */
-  margin-top: 112px
+  /* margin-top: 112px */
 }
 
 .hero {

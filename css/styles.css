@@ -1206,6 +1206,13 @@ body {
   .dropdown-hover .hover-menu.show-menu {
     display: block;
   }
+
+  .dropdown-hover > a:focus,
+  .dropdown-hover > a:active {
+    color: white;
+    background: none; /* remove default background if any */
+    box-shadow: none; /* remove Bootstrap focus outline if needed */
+  }
 }
 
 @media (max-width: 800px) {

@@ -1,24 +1,22 @@
-const industriesLink = document.querySelector('.dropdown-hover > a');
+document.addEventListener("DOMContentLoaded", function () {
 
-industriesLink.addEventListener('click', function(e) {
+  const industriesLink = document.querySelector(".dropdown-hover > a");
 
-  if (window.innerWidth < 992) { // mobile only
-    e.preventDefault();
+  if (!industriesLink) return;
 
-    const menu = this.parentElement.querySelector('.hover-menu');
+  industriesLink.addEventListener("click", function (e) {
 
-    menu.classList.toggle('show-menu');
-  }
+    if (window.innerWidth < 992) { // mobile only
+      e.preventDefault();
 
-});
+      const menu = this.parentElement.querySelector(".hover-menu");
 
-// close dropdown when clicking outside
-document.addEventListener('click', function(e){
+      if (menu) {
+        menu.classList.toggle("show-menu");
+      }
 
-  if (!e.target.closest('.dropdown-hover')) {
-    document.querySelectorAll('.hover-menu').forEach(menu => {
-      menu.classList.remove('show-menu');
-    });
-  }
+    }
+
+  });
 
 });

@@ -311,6 +311,11 @@ body {
   filter: invert(52%) sepia(91%) saturate(389%) hue-rotate(3deg) brightness(97%)
     contrast(101%);
 } /* SAAS orange */
+.content-description p {
+  text-align: justify;
+  text-justify: inter-word; /* improves spacing in justified text */
+  line-height: 1.6;         /* makes reading easier */
+}
 
 .blog-buttons .btn:hover {
   background-color: #d1d1d1;

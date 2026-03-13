@@ -733,7 +733,7 @@ body {
 
 .about-block {
   max-width: 720px;
-  padding-top: 70px;
+  /* padding-top: 70px; */
   /* keeps text readable */
 }
 

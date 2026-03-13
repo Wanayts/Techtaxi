@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (window.innerWidth < 991) { // mobile only
       e.preventDefault();
+      e.stopPropagation(); // prevent Bootstrap collapse conflict
 
       const menu = this.parentElement.querySelector(".hover-menu");
 

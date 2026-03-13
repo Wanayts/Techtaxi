@@ -872,10 +872,10 @@ body {
 }
 
 .book-bg {
-  background: url("../assets/images/bookings.png") center/cover no-repeat;
+  background-image: url("../assets/images/bookings.png");
   background-size: cover;
-  min-height: 80vh;
-  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
   flex-direction: column;
 }
 

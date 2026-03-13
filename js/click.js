@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   industriesLink.addEventListener("click", function (e) {
 
-    if (window.innerWidth < 992) { // mobile only
+    if (window.innerWidth < 991) { // mobile only
       e.preventDefault();
 
       const menu = this.parentElement.querySelector(".hover-menu");

@@ -1102,23 +1102,6 @@ body {
   margin-top: 5px;
 }
 
-/* Desktop hover (>=992px) */
-@media (min-width: 992px) {
-  .dropdown-hover .hover-menu {
-    display: none;
-    position: static;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-
-  .dropdown-hover:hover .hover-menu {
-    display: block;
-  }
-}
-
 @media (max-width: 991px) {
   h1 {
     font-size: 32px;
@@ -1199,23 +1182,21 @@ body {
     overflow: visible !important; /* allow dropdown to float */
   }
 
-  .dropdown-hover {
-    position: relative; /* parent for absolute dropdown */
+ .dropdown-hover {
+    position: relative;
   }
 
   .dropdown-hover .hover-menu {
-    display: none; /* hidden by default */
-    position: absolute; /* float over content */
-    top: 100%;
-    left: 0;
-    width: 200px;
+    display: none;
+    position: static; /* stack below link */
+    width: 100%;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1000;
   }
 
   .dropdown-hover .hover-menu.show-menu {
-    display: block !important;
+    display: block;
   }
 }
 

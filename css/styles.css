@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 70px;
+}
+
 /* bypass max-width */
 
 @media (min-width: 1400px) {

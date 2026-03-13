@@ -1176,6 +1176,13 @@ body {
     font-size: 12px;
     padding: 0.3em 0.55em;
   }
+  .dropdown-hover .hover-menu {
+    display: none;
+  }
+  
+  .dropdown-hover .hover-menu.show-menu {
+    display: block !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1222,9 +1229,6 @@ body {
     font-size: 12px;
     color: #6c757d;
   }
-  .dropdown-hover .hover-menu {
-    display: none; /* Hidden by default on mobile */
-    position: static; /* Stack naturally */
 }
 
 @media (max-width: 576px) {
@@ -1291,10 +1295,6 @@ body {
     font-size: 10px;
     padding: 0.25em 0.45em;
   }
-
-  .dropdown-hover .hover-menu {
-    display: none; /* Hidden by default on mobile */
-    position: static; /* Stack naturally */
 }
 
 @media (max-width: 767px) {
@@ -1327,8 +1327,4 @@ body {
     font-size: 10px;
     padding: 4px 6px;
   }
-
-  .dropdown-hover .hover-menu {
-    display: none; /* Hidden by default on mobile */
-    position: static; /* Stack naturally */
 }

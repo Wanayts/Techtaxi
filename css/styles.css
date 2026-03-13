@@ -1106,7 +1106,7 @@ body {
 @media (min-width: 992px) {
   .dropdown-hover .hover-menu {
     display: none;
-    position: absolute;
+    position: static;
     top: 100%;
     left: 0;
     background: #fff;

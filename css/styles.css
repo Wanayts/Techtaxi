@@ -1102,6 +1102,23 @@ body {
   margin-top: 5px;
 }
 
+/* Desktop hover (>=992px) */
+@media (min-width: 992px) {
+  .dropdown-hover .hover-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .dropdown-hover:hover .hover-menu {
+    display: block;
+  }
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 32px;
@@ -1179,17 +1196,17 @@ body {
   }
 
   .dropdown-hover {
-    position: relative; /* parent needed for absolute dropdown */
+    position: relative; /* parent for absolute positioning */
   }
 
   .dropdown-hover .hover-menu {
-    display: none; /* hidden by default */
-    position: absolute; /* floating above content */
-    top: 100%; /* below the parent link */
+    display: none;       /* hidden by default */
+    position: absolute;  /* floating over content */
+    top: 100%;
     left: 0;
+    width: 200px;        /* adjust as needed */
     background: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 200px; /* or any width you want */
     z-index: 1000;
   }
 
@@ -1197,17 +1214,22 @@ body {
     display: block !important;
   }
 
-  /* Optional: style dropdown links */
+  /* Optional styling for links */
   .dropdown-hover .hover-menu a {
     display: block;
     padding: 10px;
     border-bottom: 1px solid #eee;
-    color: #000;
     text-decoration: none;
+    color: #000;
   }
 
   .dropdown-hover .hover-menu a:hover {
     background: #f0f0f0;
+  }
+
+  /* Make sure navbar allows dropdown to overflow */
+  .navbar-collapse {
+    overflow: visible !important;
   }
 }
 
